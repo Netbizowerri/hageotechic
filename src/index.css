@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #0B2545;
+  --color-brand-secondary: #1B4F8A;
+  --color-brand-accent: #00AEEF;
+  --color-brand-ice: rgb(11 37 69 / 0.5);
+  --color-brand-surface: #060F1E;
+  --color-brand-muted: #1E293B;
+  --color-brand-dark: #060F1E;
+
+  --color-text-base: #FFFFFF;
+  --color-text-soft: #94A3B8;
+  --color-text-inverse: #060F1E;
+  --color-text-accent: #00AEEF;
+
+  --font-sans: 'Poppins', sans-serif;
+  --font-display: 'Poppins', sans-serif;
+  --font-mono: 'Poppins', sans-serif;
+}
+
+/* Force Poppins on all elements sitewide, overriding browser defaults and specific fonts */
+* {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+/* Custom styles for animations and utility elements */
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Scroll adjustment and utility styles */
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  color: var(--color-text-base);
+  background-color: var(--color-brand-surface);
+}
+
+body {
+  overflow-x: hidden;
+  font-size: 18px;
+}
+
+/* Custom background grid element */
+.bg-tech-grid {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+/* ==========================================================================
+   Typography Hierarchy Overrides (User Intent: Sitewide 18px body, 16px card text)
+   ========================================================================== */
+
+/* 1. Sitewide Body Text Font Size: 18px */
+p:not(.exclude-size-overrides):not(.exclude-size-overrides *),
+li:not(.exclude-size-overrides):not(.exclude-size-overrides *),
+.prose:not(.exclude-size-overrides):not(.exclude-size-overrides *),
+.prose p:not(.exclude-size-overrides):not(.exclude-size-overrides *),
+.text-slate-400:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6):not(span):not(.exclude-size-overrides):not(.exclude-size-overrides *),
+.text-slate-600:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6):not(span):not(.exclude-size-overrides):not(.exclude-size-overrides *),
+.text-slate-200:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6):not(span):not(.exclude-size-overrides):not(.exclude-size-overrides *),
+.text-slate-300:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6):not(span):not(.exclude-size-overrides):not(.exclude-size-overrides *),
+.text-xs:not(span):not(h1):not(h2):not(h3):not(h4):not(h5):not(h6):not(.exclude-size-overrides):not(.exclude-size-overrides *),
+.text-sm:not(span):not(h1):not(h2):not(h3):not(h4):not(h5):not(h6):not(.exclude-size-overrides):not(.exclude-size-overrides *) {
+  font-size: 18px !important;
+  line-height: 1.75 !important;
+}
+
+/* 2. Overrides inside Cards, Grid Blocks, and Panel Widgets: 16px */
+[class*="Card"] p:not(.exclude-size-overrides):not(.exclude-size-overrides *),
+[class*="Card"] span:not(.font-mono):not(.uppercase):not(.exclude-size-overrides):not(.exclude-size-overrides *),
+[class*="Card"] li:not(.exclude-size-overrides):not(.exclude-size-overrides *),
+[class*="card"] p:not(.exclude-size-overrides):not(.exclude-size-overrides *),
+[class*="card"] span:not(.font-mono):not(.uppercase):not(.exclude-size-overrides):not(.exclude-size-overrides *),
+[class*="card"] li:not(.exclude-size-overrides):not(.exclude-size-overrides *),
+.shadow-md p:not(.exclude-size-overrides):not(.exclude-size-overrides *),
+.shadow-md span:not(.font-mono):not(.uppercase):not(.exclude-size-overrides):not(.exclude-size-overrides *),
+.shadow-md li:not(.exclude-size-overrides):not(.exclude-size-overrides *),
+.shadow-lg p:not(.exclude-size-overrides):not(.exclude-size-overrides *),
+.shadow-lg span:not(.font-mono):not(.uppercase):not(.exclude-size-overrides):not(.exclude-size-overrides *),
+.shadow-lg li:not(.exclude-size-overrides):not(.exclude-size-overrides *),
+.shadow-xl p:not(.exclude-size-overrides):not(.exclude-size-overrides *),
+.shadow-xl span:not(.font-mono):not(.uppercase):not(.exclude-size-overrides):not(.exclude-size-overrides *),
+.shadow-xl li:not(.exclude-size-overrides):not(.exclude-size-overrides *),
+.bg-white p:not(.exclude-size-overrides):not(.exclude-size-overrides *),
+.bg-white span:not(.font-mono):not(.uppercase):not(.exclude-size-overrides):not(.exclude-size-overrides *),
+.bg-white li:not(.exclude-size-overrides):not(.exclude-size-overrides *),
+[class*="bg-[#0B2545]/20"] p:not(.exclude-size-overrides):not(.exclude-size-overrides *),
+[class*="bg-[#0B2545]/20"] span:not(.font-mono):not(.uppercase):not(.exclude-size-overrides):not(.exclude-size-overrides *),
+[class*="bg-[#0B2545]/30"] p:not(.exclude-size-overrides):not(.exclude-size-overrides *),
+[class*="bg-[#0B2545]/30"] span:not(.font-mono):not(.uppercase):not(.exclude-size-overrides):not(.exclude-size-overrides *),
+[class*="bg-[#0B2545]/40"] p:not(.exclude-size-overrides):not(.exclude-size-overrides *),
+[class*="bg-[#0B2545]/40"] span:not(.font-mono):not(.uppercase):not(.exclude-size-overrides):not(.exclude-size-overrides *),
+[class*="bg-[#0B2545]/50"] p:not(.exclude-size-overrides):not(.exclude-size-overrides *),
+[class*="bg-[#0B2545]/50"] span:not(.font-mono):not(.uppercase):not(.exclude-size-overrides):not(.exclude-size-overrides *),
+#why-choose-us-snapshot p:not(.exclude-size-overrides):not(.exclude-size-overrides *),
+#why-choose-us-snapshot span:not(.font-mono):not(.uppercase):not(.exclude-size-overrides):not(.exclude-size-overrides *),
+.grid > div p:not(.exclude-size-overrides):not(.exclude-size-overrides *),
+.grid > div span:not(.font-mono):not(.uppercase):not(h1 *):not(h2 *):not(h3 *):not(h4 *):not(h5 *):not(h6 *):not(.exclude-size-overrides):not(.exclude-size-overrides *),
+.grid > div li:not(.exclude-size-overrides):not(.exclude-size-overrides *) {
+  font-size: 16px !important;
+  line-height: 1.60 !important;
+}
+
+/* 3. Safety Guard for explicitly-styled Micro badges/Meta-labels */
+html body h1 span,
+html body h2 span,
+html body h3 span,
+html body h4 span,
+html body h5 span,
+html body h6 span,
+html body h1 *,
+html body h2 *,
+html body h3 *,
+html body h4 *,
+html body h5 *,
+html body h6 * {
+  font-size: inherit !important;
+  line-height: inherit !important;
+}
+
+
+
