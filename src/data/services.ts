@@ -1,3 +1,10 @@
+import coldRoomImg from '@/src/assets/images/cold_room_industrial_1781787767342.jpg';
+import hvacImg from '@/src/assets/images/hvac_cent_systems_1781787782471.jpg';
+import chillerImg from '@/src/assets/images/industrial_chiller_1781787800726.jpg';
+import vrfImg from '@/src/assets/images/vrf_climate_sys_1781787814607.jpg';
+import refrigerationImg from '@/src/assets/images/commercial_refrig_1781787828335.jpg';
+import electricalImg from '@/src/assets/images/electrical_control_1781787842889.jpg';
+
 export interface ServiceDetail {
   slug: string;
   title: string;
@@ -27,7 +34,7 @@ export const servicesData: ServiceDetail[] = [
     supportedBrands: ['Copeland', 'Bitzer', 'Sabroe', 'York', 'Daikin'],
     relatedClients: ['Fan Milk Danone', 'UAC Supreme Ice Cream', 'CHI Ltd (Chivita)'],
     icon: 'Snowflake',
-    imageUrl: '/src/assets/images/cold_room_industrial_1781787767342.jpg'
+    imageUrl: coldRoomImg
   },
   {
     slug: 'hvac',
@@ -45,7 +52,7 @@ export const servicesData: ServiceDetail[] = [
     supportedBrands: ['York', 'Trane', 'Carrier', 'LG', 'Daikin', 'Panasonic'],
     relatedClients: ['Intercontinental Hotel', 'Protea Hotel', 'Bellissimo Hotel', 'Coca-Cola', 'P&G'],
     icon: 'Wind',
-    imageUrl: '/src/assets/images/hvac_cent_systems_1781787782471.jpg'
+    imageUrl: hvacImg
   },
   {
     slug: 'chillers',
@@ -63,7 +70,7 @@ export const servicesData: ServiceDetail[] = [
     supportedBrands: ['York', 'Trane', 'Carrier', 'LG', 'Toshiba', 'Panasonic', 'Somotex', 'Thermocool', 'Sabroe'],
     relatedClients: ['Fan Milk Danone', 'UAC Supreme Ice Cream', 'Intercontinental Hotel', 'P&G'],
     icon: 'Droplet',
-    imageUrl: '/src/assets/images/industrial_chiller_1781787800726.jpg'
+    imageUrl: chillerImg
   },
   {
     slug: 'vrf-vrv',
@@ -81,7 +88,7 @@ export const servicesData: ServiceDetail[] = [
     supportedBrands: ['Daikin (VRV)', 'Mitsubishi Electric', 'LG', 'Samsung', 'Toshiba', 'Carrier'],
     relatedClients: ['UAC Supreme Ice Cream', 'Protea Hotel', 'Aava Brands'],
     icon: 'Cpu',
-    imageUrl: '/src/assets/images/vrf_climate_sys_1781787814607.jpg'
+    imageUrl: vrfImg
   },
   {
     slug: 'refrigeration',
@@ -99,7 +106,7 @@ export const servicesData: ServiceDetail[] = [
     supportedBrands: ['Copeland', 'Bitzer', 'LG', 'Panasonic', 'Sabroe'],
     relatedClients: ['Nigerian Naval Ships (NNS Ambe, NNS Aradu, NNS Obuma)', 'Chivita', 'Fan Milk Danone'],
     icon: 'ThermometerSnowflake',
-    imageUrl: '/src/assets/images/commercial_refrig_1781787828335.jpg'
+    imageUrl: refrigerationImg
   },
   {
     slug: 'energy',
@@ -117,6 +124,6 @@ export const servicesData: ServiceDetail[] = [
     supportedBrands: ['LG', 'Samsung', 'Daikin', 'Carrier', 'Bitzer'],
     relatedClients: ['Fan Milk Danone', 'UAC Supreme Ice Cream', 'CHI Ltd (Chivita)'],
     icon: 'Zap',
-    imageUrl: '/src/assets/images/electrical_control_1781787842889.jpg'
+    imageUrl: electricalImg
   }
 ];
