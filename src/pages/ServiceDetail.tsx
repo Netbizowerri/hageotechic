@@ -13,9 +13,11 @@ export default function ServiceDetail() {
 
   useEffect(() => {
     if (service) {
-      document.title = `${service.title} Specifications | Hageotechic Limited`;
+      document.title = `${service.title} | HAGeotech Nigeria`;
+      const meta = document.querySelector('meta[name="description"]');
+      if (meta) meta.setAttribute('content', service.shortDescription);
     } else {
-      document.title = "Service Subdivision Not Found | Hageotechic Limited";
+      document.title = "Service Not Found | HAGeotech Nigeria";
     }
     window.scrollTo(0, 0);
   }, [service]);
@@ -101,9 +103,11 @@ export default function ServiceDetail() {
                 <h2 className="font-display font-black text-2xl text-[#0B2545] uppercase tracking-tight leading-none mb-4">
                   Engineering Standards & Operational Domain
                 </h2>
-                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed block">
-                  {service.description}
-                </p>
+                <div className="text-xs sm:text-sm text-slate-600 leading-relaxed space-y-4">
+                  {service.description.split('\n\n').map((para, i) => (
+                    <p key={i}>{para}</p>
+                  ))}
+                </div>
               </div>
 
               {/* Core Features list checkpoints */}
@@ -127,6 +131,29 @@ export default function ServiceDetail() {
                   ))}
                 </div>
               </div>
+
+              {/* FAQ Section - only for VRV/VRF page */}
+              {service.slug === 'vrf-vrv' && (
+                <div>
+                  <h3 className="font-display font-black text-base text-[#0B2545] uppercase pb-2 border-b border-[#0B2545]/10 mb-4">
+                    Frequently Asked Questions
+                  </h3>
+                  <div className="space-y-3">
+                    <div className="bg-white border border-[#0B2545]/10 rounded-xs p-4 shadow-md">
+                      <h4 className="font-display font-bold text-sm text-[#0B2545] mb-1">What's the difference between VRV and VRF?</h4>
+                      <p className="text-xs text-slate-600 leading-relaxed">VRV is Daikin's trademarked name for their variable refrigerant technology. VRF is the general industry term used to describe the same type of technology across all brands, including Daikin's VRV.</p>
+                    </div>
+                    <div className="bg-white border border-[#0B2545]/10 rounded-xs p-4 shadow-md">
+                      <h4 className="font-display font-bold text-sm text-[#0B2545] mb-1">How often should a VRV/VRF system be serviced?</h4>
+                      <p className="text-xs text-slate-600 leading-relaxed">We recommend servicing VRV/VRF systems at least twice a year — once before the peak cooling season and once after. However, systems in continuous operation or harsh environments may benefit from quarterly inspections.</p>
+                    </div>
+                    <div className="bg-white border border-[#0B2545]/10 rounded-xs p-4 shadow-md">
+                      <h4 className="font-display font-bold text-sm text-[#0B2545] mb-1">Do you service VRV/VRF systems outside Lagos?</h4>
+                      <p className="text-xs text-slate-600 leading-relaxed">Yes. Our technicians service VRV/VRF systems nationwide across Nigeria. We have coverage in Lagos, Abuja, Port Harcourt, Kano, and can deploy to any location with cooling systems requiring our expertise.</p>
+                    </div>
+                  </div>
+                </div>
+              )}
 
               {/* Related clients & Supported strategic OEM brands row */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-6">

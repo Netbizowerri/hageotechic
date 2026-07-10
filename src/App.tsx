@@ -13,6 +13,7 @@ const ServiceDetail = lazy(() => import('./pages/ServiceDetail'));
 const Clients = lazy(() => import('./pages/Clients'));
 const WhyChooseUs = lazy(() => import('./pages/WhyChooseUs'));
 const Contact = lazy(() => import('./pages/Contact'));
+const PreventiveMaintenanceSLA = lazy(() => import('./pages/PreventiveMaintenanceSLA'));
 
 // Reusable Loading Skeleton for Suspense resolution
 function PageLoading() {
@@ -68,6 +69,7 @@ function AnimatedRoutes() {
             <Route path="/clients" element={<Clients />} />
             <Route path="/why-choose-us" element={<WhyChooseUs />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/preventive-maintenance-sla" element={<PreventiveMaintenanceSLA />} />
             
             {/* Fallback route - redirects back down to Home or custom page */}
             <Route path="*" element={<Home />} />

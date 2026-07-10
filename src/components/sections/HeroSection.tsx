@@ -65,17 +65,17 @@ export default function HeroSection() {
             >
               <span className="h-px w-12 bg-[#00AEEF]"></span>
               <span className="text-[#00AEEF] text-xs font-bold tracking-[0.3em] uppercase font-mono">
-                Nigeria's Premier Cooling Partner
+                Daikin-Certified · Nationwide Coverage
               </span>
             </motion.div>
 
             {/* Main Headline */}
             <motion.h1
               variants={itemVariants}
-              className="font-display font-black text-5xl sm:text-6xl md:text-7xl text-white tracking-tighter uppercase leading-[0.95]"
+              className="font-display font-black text-4xl sm:text-5xl md:text-6xl text-white tracking-tighter uppercase leading-[0.95]"
             >
-              Trusted <span className="text-[#00AEEF]">Cooling</span> <br />
-              Systems Expert
+              Nigeria's <span className="text-[#00AEEF]">Daikin-Certified</span> <br />
+              VRV & Industrial Cooling Specialists
             </motion.h1>
 
             {/* Subtitle specification row */}
@@ -83,7 +83,7 @@ export default function HeroSection() {
               variants={itemVariants}
               className="font-sans text-base sm:text-lg text-slate-400 mt-6 leading-relaxed font-light max-w-lg"
             >
-              HVAC-R · Cold Rooms · VRF/VRV · Chillers. Providing industrial, commercial and residential maintenance with zero-downtime philosophy across Nigeria since 2017.
+              Cold Rooms | Chillers | AHUs | VRV/VRF | Commercial & Industrial Air Conditioning — Serving all of Nigeria
             </motion.p>
 
             {/* Quick trust line */}
@@ -93,7 +93,7 @@ export default function HeroSection() {
             >
               <div className="w-2 h-2 rounded-full bg-[#00AEEF] shadow-[0_0_8px_#00AEEF]"></div>
               <span className="text-[10px] text-slate-300 font-bold font-mono tracking-widest uppercase">
-                Over ₦5 Billion in Executed Projects
+                Trusted by Fan Milk Danone
               </span>
             </motion.div>
 

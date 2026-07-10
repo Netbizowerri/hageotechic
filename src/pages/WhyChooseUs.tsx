@@ -5,7 +5,9 @@ import CTABanner from '../components/ui/CTABanner';
 
 export default function WhyChooseUs() {
   useEffect(() => {
-    document.title = "Our Operational Pillars & Safety | Hageotechic Limited";
+    document.title = "Why Choose HAGeotech | Certified Technicians, SLA-Backed Service";
+    const meta = document.querySelector('meta[name="description"]');
+    if (meta) meta.setAttribute('content', "Daikin-certified VRV specialists, trained on leading compressor and chiller brands. 40+ technicians, original spare parts, and SLA-guaranteed response times.");
     window.scrollTo(0, 0);
   }, []);
 

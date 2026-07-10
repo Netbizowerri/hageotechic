@@ -1,11 +1,13 @@
 import { useEffect } from 'react';
 import PageHero from '../components/layout/PageHero';
 import QuoteForm from '../components/forms/QuoteForm';
-import { MapPin, Phone, Mail, Clock, ShieldCheck, HeartHandshake } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, MessageCircle, ShieldCheck } from 'lucide-react';
 
 export default function Contact() {
   useEffect(() => {
-    document.title = "Contact Our Engineering Desk | Hageotechic Limited";
+    document.title = "Contact HAGeotech | Get a Quote for HVAC & Cold Room Services";
+    const meta = document.querySelector('meta[name="description"]');
+    if (meta) meta.setAttribute('content', "Contact HAGeotech for HVAC, cold room, chiller, VRV/VRF, and industrial cooling services nationwide. Call 08023331355 or email info@hageotech.com.ng.");
     window.scrollTo(0, 0);
   }, []);
 
@@ -65,9 +67,9 @@ export default function Contact() {
                       Direct Hotlines
                     </h4>
                     <div className="font-mono text-xs mt-1 flex flex-col gap-0.5 text-slate-600">
-                      <a href="tel:08037325222" className="hover:text-[#00AEEF] text-[#0B2545] font-bold transition-colors font-sans">0803 732 5222</a>
+                      <a href="tel:08023331355" className="hover:text-[#00AEEF] text-[#0B2545] font-bold transition-colors font-sans">0802 333 1355</a>
+                      <a href="tel:08037325222" className="hover:text-[#00AEEF] transition-colors">0803 732 5222</a>
                       <a href="tel:09165827282" className="hover:text-[#00AEEF] transition-colors">0916 582 7282</a>
-                      <a href="tel:08161547591" className="hover:text-[#00AEEF] transition-colors">0816 154 7591</a>
                     </div>
                   </div>
                 </div>
@@ -82,10 +84,33 @@ export default function Contact() {
                       Engineering Desk Email
                     </h4>
                     <p className="font-mono text-xs mt-1">
-                      <a href="mailto:hageotechic@gmail.com" className="hover:text-[#00AEEF] text-[#0B2545] font-bold transition-colors">
+                      <a href="mailto:info@hageotech.com.ng" className="hover:text-[#00AEEF] text-[#0B2545] font-bold transition-colors">
+                        info@hageotech.com.ng
+                      </a>
+                    </p>
+                    <p className="font-mono text-xs mt-1">
+                      <a href="mailto:hageotechic@gmail.com" className="hover:text-[#00AEEF] text-slate-500 transition-colors text-[10px]">
                         hageotechic@gmail.com
                       </a>
                     </p>
+                  </div>
+                </div>
+
+                {/* WhatsApp */}
+                <div className="flex gap-4 items-start bg-white border border-[#0B2545]/10 p-4 rounded-xs leading-normal shadow-md">
+                  <div className="p-3 bg-[#25D366]/10 text-[#25D366] border border-[#25D366]/20 rounded-xs shrink-0 mt-0.5">
+                    <MessageCircle className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <h4 className="font-sans font-extrabold text-xs text-[#0B2545] uppercase font-mono tracking-wider">
+                      WhatsApp
+                    </h4>
+                    <p className="font-mono text-xs mt-1">
+                      <a href="https://wa.me/2349165827282?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20HVAC%2Fcold%20room%20servicing" target="_blank" rel="noopener noreferrer" className="hover:text-[#25D366] text-[#0B2545] font-bold transition-colors">
+                        Chat with us on WhatsApp
+                      </a>
+                    </p>
+                    <p className="text-[10px] text-slate-500 mt-0.5">Click to send a pre-filled quote request</p>
                   </div>
                 </div>
 

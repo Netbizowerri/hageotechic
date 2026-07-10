@@ -19,67 +19,13 @@ export interface ServiceDetail {
 
 export const servicesData: ServiceDetail[] = [
   {
-    slug: 'cold-rooms',
-    title: 'Cold Room Maintenance & Installation',
-    shortDescription: 'Industrial cold rooms, compressor overhauls, condenser & evaporator supply.',
-    description: 'We are Nigeria’s leading authority on industrial cold rooms and cold chain infrastructures. Having executed over ₦2 billion in cold room solutions for multinational corporations like Fan Milk/Danone and UAC Supreme Ice Cream, we specialize in high-precision installations, rapid diagnostics, and comprehensive preventative maintenance that ensures 100% uptime for high-value cold storage.',
-    features: [
-      'Industrial and commercial cold storage room design and complete installations.',
-      'Compressor supply, repair, and complete overhauls (Copeland, Bitzer, Sabroe).',
-      'High-performance condenser and evaporator supply and optimization.',
-      'Precision thermal insulation, paneled wall alignment, and airtight sealing.',
-      'Advanced digital temperature monitoring, calibration, and automation control panels.',
-      'Nationwide preventive maintenance checklists with rapid response emergency SLAs.'
-    ],
-    supportedBrands: ['Copeland', 'Bitzer', 'Sabroe', 'York', 'Daikin'],
-    relatedClients: ['Fan Milk Danone', 'UAC Supreme Ice Cream', 'CHI Ltd (Chivita)'],
-    icon: 'Snowflake',
-    imageUrl: coldRoomImg
-  },
-  {
-    slug: 'hvac',
-    title: 'HVAC Solutions',
-    shortDescription: 'Complete Heating, Ventilation & Air Conditioning systems for industrial & commercial buildings.',
-    description: 'Our corporate HVAC work encompasses advanced heating, ventilation, and premium air conditioning architectures. We design, service, and maintain comprehensive comfort-cooling infrastructures for premium hotel systems (Intercontinental Hotel, Protea Hotel, Bellissimo Hotel) and demanding industrial plants (P&G, Coca-Cola), utilizing genuine OEM parts only.',
-    features: [
-      'Comprehensive central air conditioning design, implementation, and maintenance.',
-      'Advanced mechanical ventilation, air filtration, and indoor air quality controls.',
-      'Clean room HVAC deployments for manufacturing and pharmaceutical facilities.',
-      'Direct expansion (DX) central air systems and heavy package unit replacements.',
-      'Ductwork fabrication, balancing, air flow optimization, and thermal insulation.',
-      'Thermal load assessments and energy audits to minimize operational expenditure.'
-    ],
-    supportedBrands: ['York', 'Trane', 'Carrier', 'LG', 'Daikin', 'Panasonic'],
-    relatedClients: ['Intercontinental Hotel', 'Protea Hotel', 'Bellissimo Hotel', 'Coca-Cola', 'P&G'],
-    icon: 'Wind',
-    imageUrl: hvacImg
-  },
-  {
-    slug: 'chillers',
-    title: 'Chiller Systems',
-    shortDescription: 'Industrial process and comfort water chiller systems repair and Maintenance.',
-    description: 'We provide heavy industrial chiller solutions designed to handle high cooling capacities with meticulous temperature stability. Our professional team maintains complex water-cooled and air-cooled centrifugal, screw, and scroll chiller plants across manufacturing facilities, premium hospitality spaces, and national government assets.',
-    features: [
-      'Water-cooled and air-cooled central chiller installations and decommissioning.',
-      'Routine diagnostic inspections (vibration analysis, oil testing, tube descaling).',
-      'Electronic expansion valve controls calibration and micro-controller support.',
-      'Condenser tube bundles and heat exchanger maintenance and cleaning.',
-      'Retrofitting existing chiller equipment with environmentally friendly refrigerants.',
-      '24/7 priority SLA response with dedicated on-site chiller engineering personnel.'
-    ],
-    supportedBrands: ['York', 'Trane', 'Carrier', 'LG', 'Toshiba', 'Panasonic', 'Somotex', 'Thermocool', 'Sabroe'],
-    relatedClients: ['Fan Milk Danone', 'UAC Supreme Ice Cream', 'Intercontinental Hotel', 'P&G'],
-    icon: 'Droplet',
-    imageUrl: chillerImg
-  },
-  {
     slug: 'vrf-vrv',
-    title: 'VRF/VRV Systems',
-    shortDescription: 'Multi-split, variable refrigerant volume systems featuring cutting-edge smart zoning.',
-    description: 'Variable Refrigerant Flow (VRV) and Variable Refrigerant Volume (VRV) systems offer unparalleled zoning versatility, premium efficiency, and quiet operation for mid-to-large-scale real estate, office complexes, and luxury residential applications. We are certified master installers of leading standard VRF technologies.',
+    title: 'VRV & VRF Service',
+    shortDescription: 'Daikin-certified VRV installation, maintenance & repair — plus VRF systems from all major brands.',
+    description: 'HAGeotech is one of the very few HVAC companies in Nigeria trained and certified directly by Daikin International for VRV (Variable Refrigerant Volume) systems — Daikin\'s own trademarked technology. This means our technicians are factory-trained to install, maintain, and repair Daikin VRV systems to international standards, not just general AC knowledge.\n\nWe also service VRF (Variable Refrigerant Flow) systems — the general industry term for this technology used by other major brands. So whether your building runs on a Daikin VRV system or a VRF system from another manufacturer, HAGeotech has the expertise to install, maintain, and repair it.\n\nIf your building runs on any variable refrigerant system, we\'re one of the most qualified teams in Nigeria to keep it running.',
     features: [
-      'Variable Refrigerant Volume (VRV/VRF) system selection, load modeling, and layout design.',
-      'Refrigerant branch selector box installation, leak-testing, and high-pressure nitrogen sweeps.',
+      'Daikin VRV system installation, maintenance, and repair to international factory standards.',
+      'VRF (Variable Refrigerant Flow) system servicing for all major brands.',
       'Multi-zone climate controller programming and BMS network integration.',
       'Inverter compressor repair, replacement, and premium performance diagnostics.',
       'Preventive scheduled filtration cleaning and operational sensor verification.',
@@ -91,38 +37,92 @@ export const servicesData: ServiceDetail[] = [
     imageUrl: vrfImg
   },
   {
-    slug: 'refrigeration',
-    title: 'Refrigeration Systems Maintenance',
-    shortDescription: 'Commercial showcases, blast freezers, and industrial transport refrigeration units.',
-    description: 'We safeguard critical supply chains across Lagos and wider Nigeria by maintaining flawless industrial and commercial refrigeration units. From supermarkets and restaurant chains to industrial marine operations (Nigerian Naval vessels NNS Ambe, NNS Aradu, NNS Obuma) and bulk fish imports, we prevent catastrophic spoilage.',
+    slug: 'chillers',
+    title: 'Chiller Maintenance & Repair',
+    shortDescription: 'Industrial and commercial chiller maintenance, repair, and preventive servicing nationwide.',
+    description: 'We provide expert maintenance, servicing, and repair for industrial and commercial chillers across Nigeria. Whether it\'s routine preventive maintenance to keep your chiller running efficiently, or emergency breakdown repair, our certified technicians get the job done right.\n\nWe work with chillers used in factories, cold storage, offices, hospitals, and other commercial facilities nationwide.\n\nWe\'re trained and qualified on the industry\'s leading brands — York, Daikin, Trane, and Carrier — so no matter which brand your equipment is, our technicians know how to service it properly.',
     features: [
-      'Industrial blast freezer maintenance, coil cleaning, and thermostat calibration.',
-      'Commercial ice-maker, showcase freezer, and display unit rapid repairs.',
-      'Refrigeration unit deployments on maritime vessels, naval ships, and fishing trawlers.',
-      'Solenoid valve, filter drier, and thermostatic expansion valve diagnostics.',
-      'Door seal, gasket, and automated defrost heater replacements.',
-      'Emergency standby support with rapid troubleshooting for zero operational downtime.'
+      'Routine preventive maintenance for industrial and commercial chillers.',
+      'Emergency breakdown repair with rapid response nationwide.',
+      'Water-cooled and air-cooled central chiller diagnostics and servicing.',
+      'Condenser tube bundles and heat exchanger maintenance and cleaning.',
+      'Retrofitting existing chiller equipment with environmentally friendly refrigerants.',
+      '24/7 priority SLA response with dedicated on-site chiller engineering personnel.'
     ],
-    supportedBrands: ['Copeland', 'Bitzer', 'LG', 'Panasonic', 'Sabroe'],
-    relatedClients: ['Nigerian Naval Ships (NNS Ambe, NNS Aradu, NNS Obuma)', 'Chivita', 'Fan Milk Danone'],
+    supportedBrands: ['York', 'Trane', 'Carrier', 'LG', 'Toshiba', 'Panasonic', 'Somotex', 'Thermocool', 'Sabroe'],
+    relatedClients: ['Fan Milk Danone', 'UAC Supreme Ice Cream', 'Intercontinental Hotel', 'P&G'],
+    icon: 'Droplet',
+    imageUrl: chillerImg
+  },
+  {
+    slug: 'cold-rooms',
+    title: 'Cold Room Installation & Service',
+    shortDescription: 'Nationwide cold room installation, maintenance, and service — trusted by Fan Milk Danone.',
+    description: 'HAGeotech installs, maintains, and services cold rooms across Nigeria for businesses that depend on reliable cold storage — from food and beverage companies to pharmaceuticals and logistics.\n\nWe\'re proud to service cold rooms nationwide for Fan Milk Danone, one of Nigeria\'s leading food and beverage brands. Whether you need a new cold room installed or an existing one maintained, we deliver dependable, professional service you can trust.\n\nOur technicians are trained on Copeland, Bitzer, and Frascold semi-hermetic compressors — the industry-standard compressors used in cold room systems — ensuring your equipment is serviced correctly by qualified specialists.',
+    features: [
+      'Cold room installation, design, and commissioning for food, pharma, and logistics.',
+      'Compressor supply, repair, and complete overhauls (Copeland, Bitzer, Frascold).',
+      'High-performance condenser and evaporator supply and optimization.',
+      'Precision thermal insulation, paneled wall alignment, and airtight sealing.',
+      'Advanced digital temperature monitoring, calibration, and automation control panels.',
+      'Nationwide preventive maintenance checklists with rapid response emergency SLAs.'
+    ],
+    supportedBrands: ['Copeland', 'Bitzer', 'Frascold', 'York', 'Daikin'],
+    relatedClients: ['Fan Milk Danone', 'UAC Supreme Ice Cream', 'CHI Ltd (Chivita)'],
+    icon: 'Snowflake',
+    imageUrl: coldRoomImg
+  },
+  {
+    slug: 'hvac',
+    title: 'AHU Servicing',
+    shortDescription: 'Air Handling Unit maintenance, cleaning, repair, and preventive servicing across Nigeria.',
+    description: 'Air Handling Units (AHUs) are the heart of a building\'s ventilation and air conditioning system. We provide full AHU servicing — cleaning, repairs, and preventive maintenance — to keep air quality and cooling performance at their best.\n\nOur team services AHUs for offices, hospitals, hotels, factories, and industrial facilities across Nigeria. We\'re trained and qualified on the industry\'s leading brands — York, Daikin, Trane, and Carrier.',
+    features: [
+      'Full AHU cleaning, coil washing, and filter replacement services.',
+      'Fan motor, belt, and pulley inspection, alignment, and replacement.',
+      'Damper actuator calibration and control system verification.',
+      'Condensate drain line cleaning and bio-growth prevention.',
+      'Vibration analysis and bearing condition monitoring.',
+      'Preventive maintenance programs with guaranteed SLA response times.'
+    ],
+    supportedBrands: ['York', 'Trane', 'Carrier', 'Daikin', 'LG', 'Panasonic'],
+    relatedClients: ['Intercontinental Hotel', 'Protea Hotel', 'Bellissimo Hotel', 'Coca-Cola', 'P&G'],
+    icon: 'Wind',
+    imageUrl: hvacImg
+  },
+  {
+    slug: 'refrigeration',
+    title: 'Industrial Cooling Systems',
+    shortDescription: 'Large-scale industrial cooling solutions for factories, warehouses, and production facilities.',
+    description: 'We design, install, and maintain industrial cooling systems for factories, warehouses, and production facilities across Nigeria. From large-scale chillers to complete cooling systems, we help industrial businesses keep operations running smoothly without costly downtime.\n\nWe\'re also proficient in dehumidifiers and air handling units for factories, hotels, and commercial and residential buildings.',
+    features: [
+      'Industrial cooling system design, installation, and commissioning.',
+      'Dehumidifier servicing and maintenance for factories and commercial spaces.',
+      'Large-scale chiller integration for production facility cooling.',
+      'Air handling unit support for industrial ventilation requirements.',
+      'Emergency standby support with rapid troubleshooting for zero operational downtime.',
+      'Preventive maintenance programs with guaranteed SLA compliance.'
+    ],
+    supportedBrands: ['York', 'Trane', 'Carrier', 'Daikin', 'Bitzer', 'Copeland'],
+    relatedClients: ['Fan Milk Danone', 'UAC Supreme Ice Cream', 'P&G', 'Coca-Cola'],
     icon: 'ThermometerSnowflake',
     imageUrl: refrigerationImg
   },
   {
     slug: 'energy',
-    title: 'Energy-Efficient Cooling & Electrical Panels',
-    shortDescription: 'Electrical control panels, load balancing, and eco-friendly cooling retrofits.',
-    description: 'Modern cooling operations demand highly integrated electricity control mechanisms. We manufacture, service, and calibrate industrial electrical panels, automated switchgears, and power distribution systems designed to protect precious compressor motors and optimize overall HVAC-R power efficiency.',
+    title: 'Commercial & Residential Air Conditioning',
+    shortDescription: 'Split units, ducted systems, and full commercial AC installation, servicing, and repair.',
+    description: 'From split units in homes to full commercial AC systems in offices and retail spaces, HAGeotech provides installation, servicing, and repair for all types of air conditioning. We handle both small residential jobs and larger commercial contracts with the same level of professional care.\n\nOur technicians are trained to service all major AC brands, ensuring your comfort systems run efficiently year-round.',
     features: [
-      'Custom main distribution boards (MDB) and control panels for chillers & cold rooms.',
-      'Variable Frequency Drive (VFD) installation and tuning for soft motor startups.',
-      'Automated phase-failure, over-voltage, and under-voltage protection systems.',
-      'Power factor correction (PFC) panels and harmonic filter installations.',
-      'BMS and SCADA integration for comprehensive remote electrical telemetries.',
-      'Thermal imaging of components to detect potential hot-spots and prevent physical failure.'
+      'Split unit AC installation, servicing, and repair for homes and offices.',
+      'Ducted and central air conditioning system design and installation.',
+      'Commercial AC system maintenance for retail spaces and office buildings.',
+      'VRV/VRF-based multi-split solutions for larger commercial premises.',
+      'Compressor diagnostics, repair, and replacement for all AC types.',
+      'Preventive maintenance schedules to extend equipment lifespan.'
     ],
-    supportedBrands: ['LG', 'Samsung', 'Daikin', 'Carrier', 'Bitzer'],
-    relatedClients: ['Fan Milk Danone', 'UAC Supreme Ice Cream', 'CHI Ltd (Chivita)'],
+    supportedBrands: ['Daikin', 'LG', 'Panasonic', 'Samsung', 'Toshiba', 'Carrier'],
+    relatedClients: ['Intercontinental Hotel', 'Protea Hotel', 'Bellissimo Hotel', 'Aava Brands'],
     icon: 'Zap',
     imageUrl: electricalImg
   }

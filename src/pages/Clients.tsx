@@ -9,7 +9,9 @@ import CTABanner from '../components/ui/CTABanner';
 
 export default function Clients() {
   useEffect(() => {
-    document.title = "Our Clients & Completed Projects | Hageotechic Limited";
+    document.title = "Our Clients | HAGeotech — Trusted by Fan Milk Danone & Nigeria's Top Brands";
+    const meta = document.querySelector('meta[name="description"]');
+    if (meta) meta.setAttribute('content', "Trusted by Fan Milk Danone, UAC Supreme Ice Cream, Intercontinental Hotel, Coca-Cola, P&G, and more for HVAC and cold room servicing nationwide.");
     window.scrollTo(0, 0);
   }, []);
 

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Snowflake, Phone, ArrowUpRight } from 'lucide-react';
+import { Menu, X, Snowflake, Phone, MessageCircle, ArrowUpRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
 export default function Navbar() {
@@ -96,6 +96,15 @@ export default function Navbar() {
 
               {/* Header Phone CTA */}
               <div className="flex items-center gap-3 pl-4 border-l border-white/10">
+                <a
+                  href="https://wa.me/2349165827282?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20HVAC%2Fcold%20room%20servicing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-[#25D366]/10 hover:bg-[#25D366]/20 text-[#25D366] px-3 py-2 rounded-xs text-[11px] uppercase tracking-widest font-bold font-sans flex items-center gap-1.5 border border-[#25D366]/30 transition-all active:scale-95"
+                >
+                  <MessageCircle className="w-3.5 h-3.5" />
+                  WhatsApp
+                </a>
                 <Link
                   to="/contact"
                   className="bg-[#00AEEF] hover:bg-[#1B4F8A] text-white px-5 py-2 rounded-xs text-[11px] uppercase tracking-widest font-bold font-sans flex items-center gap-1.5 shadow-lg shadow-[#00AEEF]/20 transition-all active:scale-95"
@@ -109,7 +118,15 @@ export default function Navbar() {
             {/* Mobile Menu Button */}
             <div className="md:hidden flex items-center gap-2">
               <a
-                href="tel:08037325222"
+                href="https://wa.me/2349165827282?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20HVAC%2Fcold%20room%20servicing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 border border-[#25D366]/30 rounded-lg text-[#25D366] bg-brand-dark/50"
+              >
+                <MessageCircle className="w-4 h-4" />
+              </a>
+              <a
+                href="tel:08023331355"
                 className="p-2 border border-brand-accent/20 rounded-lg text-brand-accent bg-brand-dark/50"
               >
                 <Phone className="w-4 h-4" />
@@ -153,11 +170,20 @@ export default function Navbar() {
                 ))}
                 <div className="pt-4 flex flex-col gap-3 px-4 border-t border-white/10">
                   <a
-                    href="tel:08037325222"
+                    href="tel:08023331355"
                     className="flex items-center justify-center gap-2 bg-[#0B2545]/30 text-white px-4 py-3 rounded-xs text-xs font-mono border border-white/10"
                   >
                     <Phone className="w-4 h-4 text-[#00AEEF]" />
-                    0803 732 5222
+                    0802 333 1355
+                  </a>
+                  <a
+                    href="https://wa.me/2349165827282?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20HVAC%2Fcold%20room%20servicing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-2 bg-[#25D366]/10 text-[#25D366] px-4 py-3 rounded-xs text-xs font-mono border border-[#25D366]/30"
+                  >
+                    <MessageCircle className="w-4 h-4" />
+                    WhatsApp
                   </a>
                   <Link
                     to="/contact"

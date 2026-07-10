@@ -1,28 +1,28 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
-import { Globe, Library, Database, Zap, ArrowUpRight, HelpCircle } from 'lucide-react';
+import { Award, Settings, Star, ShieldCheck, ArrowUpRight, HelpCircle } from 'lucide-react';
 
 export default function WhyUsSection() {
   const pillars = [
     {
-      icon: Globe,
-      title: 'Nationwide Coverage',
-      desc: 'Mobile teams of 40+ expert cold-chain engineers answering calls across all 36 Nigerian states.'
+      icon: Award,
+      title: 'Daikin-Certified VRV',
+      desc: 'One of the very few companies in Nigeria certified directly by Daikin International for VRV systems.'
     },
     {
-      icon: Database,
-      title: '3-Month Spares Reserve',
-      desc: 'Maintaining massive quantities of OEM compressors, fans, and gas stocks to bypass import lag.'
+      icon: Settings,
+      title: 'Compressor Certified',
+      desc: 'Certified on Copeland, Bitzer & Frascold semi-hermetic compressors for cold room systems.'
     },
     {
-      icon: Library,
-      title: 'FMCA Methodology',
-      desc: 'Executing comprehensive Failure Mode & Criticality Assessments at the initiation of every contract.'
+      icon: Star,
+      title: 'Big 4 Chiller Brands',
+      desc: 'Trained and qualified on York, Daikin, Trane & Carrier — the industry\'s leading chiller & AHU brands.'
     },
     {
-      icon: Zap,
-      title: 'Zero Breakdown Philosophy',
-      desc: 'Assertive, rapid-scheduling preventive sweeps ensuring zero runtime thermal loss.'
+      icon: ShieldCheck,
+      title: 'Trusted by Fan Milk Danone',
+      desc: 'Pan-Nigeria cold room servicing for one of Nigeria\'s leading food & beverage brands since 2018.'
     }
   ];
 

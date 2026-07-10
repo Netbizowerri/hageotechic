@@ -83,7 +83,7 @@ export default function AboutSnapshot() {
             </h2>
 
             <p className="text-xs sm:text-sm text-slate-400 leading-relaxed max-w-2xl">
-              Hageotechic Limited has operated at the absolute pinnacle of the West African cooling systems market since 2017. With a core track record of executing over ₦5 billion in installation and preventive maintenance projects, we provide uninterrupted technical support to premium corporations and governmental bureaus across Nigeria.
+              HAGeotech is one of the very few HVAC companies in Nigeria trained and certified directly by Daikin International for VRV (Variable Refrigerant Volume) systems — Daikin's own trademarked technology. We also service VRF (Variable Refrigerant Flow) systems from other major brands. Beyond VRV/VRF, we provide expert installation, maintenance, and repair across cold rooms, chillers, AHUs, and industrial and commercial air conditioning — trusted by major brands including Fan Milk Danone for pan-Nigeria cold room servicing.
             </p>
 
             {/* Core Snapshot Proof Points */}
@@ -116,10 +116,10 @@ export default function AboutSnapshot() {
                 <CheckCircle2 className="w-5 h-5 text-brand-accent shrink-0 mt-0.5" />
                 <div>
                   <h4 className="font-sans font-bold text-xs text-white leading-tight">
-                    Genuine OEM Spares Only
+                    Daikin-Certified VRV Specialists
                   </h4>
                   <p className="font-sans text-[11px] text-slate-400 mt-1 leading-normal">
-                    Strict adherence to original equipment specs to prolong industrial apparatus lifespans.
+                    One of very few Nigerian companies factory-trained and certified by Daikin International.
                   </p>
                 </div>
               </div>
@@ -128,10 +128,10 @@ export default function AboutSnapshot() {
                 <CheckCircle2 className="w-5 h-5 text-brand-accent shrink-0 mt-0.5" />
                 <div>
                   <h4 className="font-sans font-bold text-xs text-white leading-tight">
-                    National Navy Specialist
+                    Compressor & Big 4 Certified
                   </h4>
                   <p className="font-sans text-[11px] text-slate-400 mt-1 leading-normal">
-                    Commissioned for critical engineering on naval flagship vessels (NNS Ambe, NNS Aradu, NNS Obuma).
+                    Certified on Copeland, Bitzer & Frascold compressors. Qualified on York, Daikin, Trane & Carrier.
                   </p>
                 </div>
               </div>

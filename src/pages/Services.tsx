@@ -2,12 +2,14 @@ import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import PageHero from '../components/layout/PageHero';
 import { servicesData } from '../data/services';
-import { Network, Snowflake, Wind, Droplet, Cpu, Thermometer, Zap, ArrowRight, CheckCircle2 } from 'lucide-react';
+import { Network, Snowflake, Wind, Droplet, Cpu, Thermometer, Zap, ArrowRight, CheckCircle2, ShieldCheck } from 'lucide-react';
 import CTABanner from '../components/ui/CTABanner';
 
 export default function Services() {
   useEffect(() => {
-    document.title = "Our Cooling Services & Technical Domains | Hageotechic Limited";
+    document.title = "Our Services | VRV/VRF, Chillers, Cold Rooms, AHU & Cooling Solutions";
+    const meta = document.querySelector('meta[name="description"]');
+    if (meta) meta.setAttribute('content', "Daikin-certified VRV installation, chiller maintenance, cold room servicing, AHU repair, industrial cooling, and commercial AC across Nigeria.");
     window.scrollTo(0, 0);
   }, []);
 
@@ -60,9 +62,11 @@ export default function Services() {
                       {service.title}
                     </h2>
 
-                    <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-6 block">
-                      {service.description}
-                    </p>
+                    <div className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-6 space-y-3">
+                      {service.description.split('\n\n').map((para, i) => (
+                        <p key={i}>{para}</p>
+                      ))}
+                    </div>
 
                     {/* Features list bullet points */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
@@ -146,6 +150,31 @@ export default function Services() {
             })}
           </div>
 
+        </div>
+      </section>
+
+      {/* Preventive Maintenance & SLA CTA */}
+      <section className="py-16 bg-[#0B2545] border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="inline-flex items-center gap-2 bg-brand-accent/10 border border-brand-accent/25 rounded-xs px-3 py-1 mb-4">
+            <ShieldCheck className="w-4 h-4 text-brand-accent" />
+            <span className="font-mono text-[10px] uppercase tracking-wider text-brand-accent font-bold">
+              SLA-Backed Protection
+            </span>
+          </div>
+          <h2 className="font-display font-black text-3xl sm:text-4xl text-white uppercase tracking-tight leading-none mb-4">
+            Preventive Maintenance & SLA Programs
+          </h2>
+          <p className="text-sm text-slate-300 max-w-2xl mx-auto mb-8">
+            Don't wait for a breakdown. Get guaranteed response times, original spare parts, and regular scheduled inspections backed by contractual SLAs.
+          </p>
+          <Link
+            to="/preventive-maintenance-sla"
+            className="inline-flex items-center gap-2 bg-brand-accent hover:bg-white hover:text-[#0B2545] text-white px-8 py-4 rounded-xs text-xs uppercase tracking-widest font-bold transition-all"
+          >
+            Learn About Our SLA Plans
+            <ArrowRight className="w-4 h-4" />
+          </Link>
         </div>
       </section>
 
